@@ -16,15 +16,16 @@ class Program
             Console.WriteLine(prime);
         }
 
-        Console.WriteLine("__________________\n");
+        //Console.WriteLine("__________________\n");
 
-        p.GenerateRandomPrimesandStore();
-        foreach (var item in p.dict)
-        {
-            if (item.Value == true)
-            {
-                Console.WriteLine(item.Key + " " + item.Value);
-            }
-        }
+        //p.GenerateRandomPrimesandStore();
+        //Dictionary<int,bool> dict2=p.GenerateRandomPrimesandStore();
+        //foreach (var item in dict2)
+        //{
+        //    if (item.Value == true)
+        //    {
+        //        Console.WriteLine(item.Key + " " + item.Value);
+        //    }
+        //}
     }
 }

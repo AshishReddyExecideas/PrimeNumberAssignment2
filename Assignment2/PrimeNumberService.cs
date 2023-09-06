@@ -10,10 +10,10 @@ namespace Assignment2
     {
         private int minValue;
         private int maxValue;
-        public Dictionary<int,bool> dict = new Dictionary<int,bool>();
+        public static Dictionary<int,bool> dict = new();
 
         
-        internal void CreateRandomRange()
+        private void CreateRandomRange()
         {
             bool hasOldRange = minValue > 0 && maxValue > 0;
             Random rnd = new Random();
@@ -41,48 +41,41 @@ namespace Assignment2
             return GenerateRandomPrimeNumber();
         }
 
-        internal bool IsItPrime(int n)
+        private bool IsItPrime(int n)
         {
-            if (n <= 1)
+            if(dict.ContainsKey(n))
             {
-                return false;
-            }
-
-            if (n == 2 || n == 3)
-            {
-                return true;
-            }
-            else if (n % 6 == 1 || n % 6 == 5)
-            {
-                var sqrt = Math.Sqrt(n);
-                for (int i = 2; i <= sqrt; i++)
-                {
-                    if ((n % i) == 0)
-                        return false;
-                }
-
-                return true;
+                return dict[n];
             }
             else
             {
-                return false;
-            }
-        }
-
-
-        internal void GenerateRandomPrimesandStore()
-        {
-            CreateRandomRange();
-            for (int i = minValue; i <= maxValue; i++)
-            {
-                if(IsItPrime(i))
+                if (n <= 1)
                 {
-                    dict.Add(i,true);
+                    dict.Add(n, false);
+                }
+
+                if (n == 2 || n == 3)
+                {
+                    dict.Add(n, true);
+                }
+                else if (n % 6 == 1 || n % 6 == 5)
+                {
+                    var sqrt = Math.Sqrt(n);
+                    for (int i = 2; i <= sqrt; i++)
+                    {
+                        if ((n % i) == 0)
+                        {
+                            dict.Add(n, false);
+                        }
+                    }
+
+                    dict.Add(n, true);
                 }
                 else
                 {
-                    dict.Add(i,false);
+                    dict.Add(n, false);
                 }
+                return dict[n];
             }
         }
     }
