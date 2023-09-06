@@ -1,0 +1,14 @@
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.AssemblyInfoInputs.cache
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.AssemblyInfo.cs
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.csproj.CoreCompileInputs.cache
+E:\Internship Related Files\Assignment2\Assignment2\bin\Debug\net7.0\Assignment2.exe
+E:\Internship Related Files\Assignment2\Assignment2\bin\Debug\net7.0\Assignment2.deps.json
+E:\Internship Related Files\Assignment2\Assignment2\bin\Debug\net7.0\Assignment2.runtimeconfig.json
+E:\Internship Related Files\Assignment2\Assignment2\bin\Debug\net7.0\Assignment2.dll
+E:\Internship Related Files\Assignment2\Assignment2\bin\Debug\net7.0\Assignment2.pdb
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.dll
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\refint\Assignment2.dll
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.pdb
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\Assignment2.genruntimeconfig.cache
+E:\Internship Related Files\Assignment2\Assignment2\obj\Debug\net7.0\ref\Assignment2.dll
